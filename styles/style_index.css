@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FF9E01;
+    background: url("../images/frameA/backgroundA.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#button_play{
+    position: absolute;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    top: 41.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#button_play:hover{
+    filter: brightness(105%);
+}
+
+#button_play:active{
+    filter: brightness(115%);
+}
+
+.info{
+    transition: transform 0.2s ease;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.info:hover{
+    transform: scale(1.02);
+}
+
+.text{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100px;
+    width: 240px;
+    left: 240px;
+    transform: translateX(-75%);
+    background: #FBFCDD;
+    padding: 10px 45px 10px 25px;
+    border-radius: 19px;
+    transition: opacity 0.3s;
+}
+
+.info:hover .text {
+    visibility: visible;
+    color: #000;
+    opacity: 1;
+}
+
+h1{
+    font-size: 25px;
+}
+
+p{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2{
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
